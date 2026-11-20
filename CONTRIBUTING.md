@@ -115,9 +115,9 @@ list is the [CLI reference](docs/guide/cli-reference.md).
   `PRAXIBOT_FAKE_PROVIDER=1 pnpm dev:desktop` uses a deterministic fake provider, so no API key is
   needed. (`PRAXIBOT_BOT_BIN` points the app at a specific `bot` binary.)
 - **UI only, no daemon, no Tauri:** `pnpm --dir apps/desktop/ui dev` and open
-  `http://localhost:1420/?mock=1`. Mock mode (`apps/desktop/ui/src/api/mock.ts`) serves canned data
-  and is how design reviews and screenshots are made. Useful query parameters: `lang=en|tr`,
-  `theme=<name>`, `screen=<apps|schedules|settings|...>` (see `App.tsx` for the list).
+  `http://localhost:1420/?mock=1`. Mock mode (`apps/desktop/ui/src/api/mockMode.ts`) serves canned data
+  and is how design reviews and screenshots are made. See the [Desktop UI README](apps/desktop/ui/README.md#mock-mode)
+  for the current mock-mode query parameters.
 - **Windows installer:** see [Building the Windows installer yourself](docs/guide/install.md#building-the-windows-installer-yourself).
 - **Linux host:** see [Running Praxi on a remote host](docs/guide/remote-host.md).
 
